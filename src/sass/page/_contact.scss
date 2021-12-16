@@ -1,0 +1,62 @@
+// トップ・お問い合わせ欄
+.contact {
+  background-color: #3D3D3D;
+  width: 100%;
+  @include mq("md") {
+    padding: 0;
+    padding-bottom: rem(149);
+  }
+}
+.contact__inner {
+  max-width: rem(640);
+  width: 100%;
+  padding: 0 rem(20) rem(64) rem(20);
+  margin: 0 auto;
+  @include mq("md") {
+    max-width: rem(1150);
+    padding: 0 rem(25) ;
+  }
+}
+.contact .section-header::before {
+  background-color: rgba(61, 61, 61, .7);
+}
+.contact__text {
+  @include mq("md") {
+  margin-top: rem(45);
+  }
+}
+// セクションテキスト・コンタクト欄
+.contact__maintext {
+  font-size: rem(16);
+  font-weight: 400;
+  color: $white;
+  letter-spacing: rem(2);
+  padding: rem(22) 0 rem(18) 0;
+  @include mq("md") {
+    font-size: rem(16);
+    font-weight: 400;
+    color: $white;
+    line-height: 0;
+    letter-spacing: rem(2);
+    padding: 0;
+    text-align: center;
+  }
+}
+.contact__btn-header {
+  margin-top: rem(24);
+  @include mq("md") {
+    display: flex;
+    justify-content: center;
+    margin-top: rem(20);
+  }
+}
+.contact__show-btn {
+  text-align: center;
+  @include mq("md") {
+    position: relative;
+    margin-top: rem(60);
+  }
+}
+
+
+

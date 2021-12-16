@@ -1,0 +1,12 @@
+.address-map {
+  width: 100%;
+  height: rem(300);
+  background: $black;
+  @include mq("md") {
+    max-width: rem(1150);
+    width: 100%;
+    height: rem(367);
+    background: $black;
+    padding: 0 rem(25);
+  }
+}

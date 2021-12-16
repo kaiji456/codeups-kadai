@@ -1,0 +1,6 @@
+.top-overview-page {
+  margin: rem(85) auto 0 auto;
+  @include mq("md") {
+    margin: rem(115) auto 0 auto;
+  }
+}

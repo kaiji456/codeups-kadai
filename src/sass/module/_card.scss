@@ -1,0 +1,101 @@
+.card {
+  @include mq("md") {
+    width: calc(33.3333% - 25px * 2 / 3);
+    max-width: 100%;
+  }
+}
+.card__title {
+  color: #333;
+  font-size: rem(18);
+  font-weight: 500;
+  line-height: rem(35);
+  letter-spacing: rem(1);
+}
+.card__text,
+.card__date {
+  color: #333;
+  font-size: rem(14);
+  font-weight: 400;
+  line-height: rem(26);
+  letter-spacing: rem(1);
+  @include mq("md") {
+  padding-top: rem(4);
+  }
+}
+.card__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @include mq("md") {
+    margin-top: rem(10);
+  }
+}
+.card__tag {
+  color: #333;
+  font-size: rem(14);
+  font-weight: 400;
+  background-color: #ffea2e;
+  padding: rem(3) rem(5);
+  letter-spacing: rem(1);
+  @include mq("md") {
+  }
+}
+.card__body {
+  padding: rem(4) rem(23) rem(16) rem(23);
+  background-color: #fff;
+  @include mq("md") {
+  }
+}
+.card__img {
+  padding-top: 66.571429%;
+  position: relative;
+  @include mq("md") {
+  }
+}
+.card__img img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  @include mq("md") {
+  }
+}
+.card__new-tag {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #333;
+  font-size: rem(16);
+  font-weight: 400;
+  line-height: rem(35);
+  letter-spacing: rem(2);
+  background: #ffba6a;
+  width: rem(60);
+  height: rem(60);
+  border-radius: 100%;
+  left: rem(-14);
+  top: rem(-16);
+  z-index: 12;
+  @include mq("md") {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+    font-size: rem(16);
+    font-weight: 400;
+    line-height: rem(35);
+    letter-spacing: rem(2);
+    background: #ffba6a;
+    width: rem(60);
+    height: rem(60);
+    border-radius: 100%;
+    left: rem(-14);
+    top: rem(-16);
+    z-index: 12;
+  }
+}

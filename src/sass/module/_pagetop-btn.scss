@@ -1,0 +1,53 @@
+/* ページTOPに戻る */
+.pagetop-btn {
+  display: none;
+  position: fixed;
+  right: rem(21);
+  bottom: rem(41);
+  z-index: 13;
+  @include mq("md") {
+    display: none;
+    right: rem(31);
+    bottom: rem(32);
+  }
+}
+.pagetop-btn a {
+  display: block;
+  font-size: 0;
+  width: rem(45);
+  height: rem(45);
+  text-align: center;
+  background: #fff;
+  line-height: rem(45);
+  @include mq("md") {
+  }
+}
+.pagetop-btn a i {
+  font-size: rem(20);
+  line-height: rem(45);
+  display: inline-block;
+  vertical-align: middle;
+  color: #333;
+  line-height: 1;
+  width: 1em;
+  height: 1em;
+  border: 0.1em solid currentColor;
+  border-left: 0;
+  border-bottom: 0;
+  box-sizing: border-box;
+  transform: translateY(25%) rotate(-45deg);
+  @include mq("md") {
+  }
+}
+.pagetop-btn a:hover {
+  @include mq("md") {
+    background-color: #333;
+    transition: 0.5s;
+  }
+}
+.pagetop-btn a:hover i {
+  @include mq("md") {
+    color: #fff;
+    transition: 0.5s;
+  }
+}

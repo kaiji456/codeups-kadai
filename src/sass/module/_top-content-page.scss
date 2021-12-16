@@ -1,0 +1,7 @@
+.top-content-page{
+  margin-top: rem(85);
+  @include mq("md") {
+  margin-top: rem(69);
+  }
+}
+

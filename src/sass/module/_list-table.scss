@@ -1,0 +1,36 @@
+.list-table {
+  display: flex;
+  width: 100%;
+  border-bottom: 1px solid $white;
+  padding: rem(17) 0 rem(18) 0;
+  @include mq("md") {
+    padding: rem(30) 0 rem(28) 0;
+  }
+}
+.list-table:first-child {
+  padding-top: 0;
+}
+.list-table dt {
+  width: 32.5%;
+  font-size: rem(13);
+  font-weight: 400;
+  color: $white;
+  line-height: rem(21);
+  @include mq("md") {
+    width: 12%;
+    font-size: rem(16);
+    letter-spacing: rem(1);
+  }
+}
+.list-table dd {
+  width: 67.5%;
+  font-size: rem(13);
+  font-weight: 400;
+  color: $white;
+  line-height: rem(24);
+  @include mq("md") {
+    width: 88%;
+    font-size: rem(16);
+    letter-spacing: rem(1);
+  }
+}

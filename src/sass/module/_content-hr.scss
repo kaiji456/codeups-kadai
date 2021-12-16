@@ -1,0 +1,19 @@
+
+// 背景線
+.content-hr {
+  position: relative;
+  top: rem(20);
+  transform: rotate(61.09deg);
+  transform-origin: 0% 0%;
+  width: 206.85296711427%;
+  border: 0;
+  border-top: 1px solid #f9f871;
+  margin: 0;
+  padding: 0;
+  @include mq("md") {
+    top: rem(-28);
+    width: 141%;
+    transform: rotate(45deg);
+    transform-origin: 0% 0%;
+  }
+}

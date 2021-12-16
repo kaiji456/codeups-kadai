@@ -1,0 +1,67 @@
+.list {
+  @include mq("md") {
+    display: flex;
+    align-items: center;
+  }
+}
+.list:last-child {
+  padding-bottom: 0;
+  @include mq("md") {
+  }
+}
+.list__top {
+  display: flex;
+  align-items: center;
+  padding-bottom: rem(16);
+  @include mq("md") {
+    display: flex;
+    padding-bottom: 0;
+    padding-right: rem(61);
+  }
+}
+.list__date {
+  padding-right: rem(29);
+  @include mq("md") {
+  }
+}
+.list__tag {
+  border: 1px solid $white;
+  padding: rem(5.5) rem(21.5);
+  white-space: nowrap;
+  @include mq("md") {
+  }
+}
+.list__date p {
+  font-size: rem(16);
+  font-weight: 400;
+  color: $white;
+  @include mq("md") {
+  }
+}
+.list__tag p {
+  font-size: rem(14);
+  font-weight: 400;
+  color: $white;
+  @include mq("md") {
+  }
+}
+.list__text {
+  @include mq("md") {
+    max-width: rem(572);
+    width: 100%;
+  }
+}
+
+.list__text p {
+  font-size: rem(16);
+  font-weight: 400;
+  color: $white;
+  @include mq("md") {
+  }
+}
+.list__text a p:hover {
+  @include mq("md") {
+    color: #f9f871;
+    transition: 0.3s;
+  }
+}

@@ -1,0 +1,94 @@
+// トップ・ブログ欄
+.blog {
+  @include mq("md") {
+    width: 100%;
+  }
+}
+.blog__inner {
+  max-width: rem(640);
+  width: 100%;
+  margin: rem(10) auto 0 auto;
+  padding: 0 rem(20);
+  @include mq("md") {
+    max-width: rem(1150);
+    width: 100%;
+    padding: 0 rem(25);
+    margin: 0 auto;
+  }
+}
+.blog__card {
+  display: block;
+  position: relative;
+  margin-top: rem(24);
+  @include mq("md") {
+    position: relative;
+    margin-top: 0;
+  }
+}
+.blog__card:first-child {
+  position: relative;
+  margin-top: 0;
+}
+.blog__card-list {
+  margin-top: rem(72);
+  @include mq("md") {
+    margin-top: 0;
+    width: 100%;
+  }
+}
+
+.blog__card + .blog__card {
+  @include mq("md") {
+    margin-left: 25px;
+  }
+}
+.blog__card:nth-child(3n + 1) {
+  @include mq("md") {
+    margin-left: 0;
+  }
+}
+.blog__card:nth-child(n + 4) {
+  @include mq("md") {
+    margin-top: rem(48);
+  }
+}
+
+.blog__card:hover .card__body {
+  @include mq("md") {
+    background-color: #333;
+    transition: 0.3s;
+  }
+}
+.blog__card:hover .card__title {
+  @include mq("md") {
+    color: #fff;
+    transition: 0.3s;
+  }
+}
+.blog__card:hover .card__text {
+  @include mq("md") {
+    color: #fff;
+    transition: 0.3s;
+  }
+}
+.blog__card:hover .card__date {
+  @include mq("md") {
+    color: #fff;
+    transition: 0.3s;
+  }
+}
+.blog__btn-header {
+  @include mq("md") {
+    display: flex;
+    justify-content: center;
+  }
+}
+.blog__show-btn {
+  margin-top: rem(30);
+  box-sizing: unset;
+  @include mq("md") {
+    position: relative;
+    margin-top: rem(48);
+    padding: 0;
+  }
+}

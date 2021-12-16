@@ -1,0 +1,56 @@
+// セクションタイトル、テキスト共通
+.section-header {
+  position: relative;
+  text-align: center;
+  z-index: 0;
+  @include mq("md") {
+    max-width: rem(1150);
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+    top: rem(35);
+  }
+}
+.section-header__title {
+  font-family: $second-font-family;
+  font-size: rem(50);
+  font-weight: 400;
+  color: rgba(249, 248, 113, 0.2);
+  letter-spacing: rem(2);
+  @include mq("md") {
+    display: block;
+    font-size: rem(110);
+  }
+}
+.section-header__subtitle {
+  position: absolute;
+  top: rem(49);
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: rem(20);
+  font-weight: 400;
+  color: $white;
+  letter-spacing: rem(2);
+  z-index: 3;
+  @include mq("md") {
+    font-size: rem(30);
+    top: rem(45);
+  }
+}
+
+// セクションタイトル・コンタクト欄
+.section-header__subtitle-contact {
+  position: absolute;
+  top: rem(49);
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: rem(20);
+  font-weight: 400;
+  color: $white;
+  letter-spacing: rem(2);
+  z-index: 3;
+  @include mq("md") {
+    font-size: rem(30);
+    top: rem(90);
+  }
+}

@@ -1,0 +1,5 @@
+.blog-top {
+  @include mq("md") {
+    margin-top: rem(120);
+  }
+}

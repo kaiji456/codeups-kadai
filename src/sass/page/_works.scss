@@ -1,0 +1,36 @@
+//トップ・制作実績欄
+.works {
+  width: 100%;
+  @include mq("md") {
+    overflow: hidden;
+  }
+}
+.works__slider {
+  margin-top: rem(48);
+  @include mq("md") {
+    margin: 0 calc(50% - 50vw);
+  }
+}
+.works__inner {
+  @include mq("md") {
+    max-width: rem(1150);
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 rem(25);
+  }
+}
+.works__text {
+  @include mq("md") {
+  }
+}
+.works__show-btn {
+  margin-top: rem(16);
+  @include mq("md") {
+    position: relative;
+    padding: 0;
+    margin-top: rem(48);
+  }
+}
+
+
+

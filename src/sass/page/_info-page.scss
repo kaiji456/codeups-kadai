@@ -1,0 +1,22 @@
+// お知らせページ
+.info-page__mainview {
+  background-image: url(../images/common/info-mv-sp.jpg);
+  @include mq("md") {
+    background-image: url(../images/common/info-mv.jpg);
+  }
+}
+// パンくず
+.info-page__breadcrumbs {
+  margin-top: rem(16);
+}
+.info-page__list {
+  padding-bottom: rem(32);
+}
+.info-page__pagination {
+  margin: rem(76) auto 0 auto;
+  @include mq("md") {
+    margin-top: rem(104);
+  }
+}
+
+

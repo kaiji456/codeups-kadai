@@ -1,0 +1,47 @@
+.card-header {
+  position: relative;
+  background: #3d3d3d;
+  z-index: 10;
+  @include mq("md") {
+    padding: 0 calc(50vw - 50%);
+    width: 100vw;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(
+      90deg,
+      transparent 0%,
+      transparent 30%,
+      #3d3d3d 30%,
+      #3d3d3d 100%
+    );
+    z-index: 10;
+    margin-top: 0;
+  }
+}
+.card-header--reverse {
+  position: relative;
+  margin-top: rem(53);
+  background: #3d3d3d;
+  z-index: 10;
+  @include mq("md") {
+    margin: 0 calc(50% - 50vw);
+    padding: 0 calc(50vw - 50%);
+    width: 100vw;
+    display: flex;
+    flex-direction: row-reverse;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(
+      90deg,
+      #3d3d3d 0%,
+      #3d3d3d 70%,
+      transparent 70%,
+      transparent 100%
+    );
+    z-index: 10;
+    overflow: hidden;
+  }
+}

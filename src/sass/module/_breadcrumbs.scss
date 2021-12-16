@@ -1,0 +1,58 @@
+// パンくずリスト
+.breadcrumbs {
+  max-width: rem(640);
+  width: 100%;
+  display: flex;
+  margin: 0 auto;
+  padding: rem(0) rem(20);
+  @include mq("md") {
+    max-width: rem(1150);
+    width: 100%;
+    padding: rem(0) rem(25);
+  }
+}
+.breadcrumbs li {
+  font-size: rem(16);
+  font-weight: 400;
+  color: #fff;
+  letter-spacing: rem(1);
+}
+.breadcrumbs li::after {
+  content: ">";
+  display: inline-block;
+  padding: 0 rem(5);
+}
+.breadcrumbs li:last-child::after {
+  display: none;
+}
+
+// 詳細ページ
+.breadcrumbs-detail {
+  max-width: rem(640);
+  width: 100%;
+  display: flex;
+  background: #111;
+  margin: 0 auto;
+  padding: rem(66) rem(20) 0 rem(20);
+  @include mq("md") {
+    max-width: rem(1150);
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+    padding: rem(66) rem(25) 0 rem(25);
+  }
+}
+.breadcrumbs-detail li {
+  font-size: rem(16);
+  font-weight: 400;
+  color: #fff;
+  letter-spacing: rem(1);
+}
+.breadcrumbs-detail li::after {
+  content: ">";
+  display: inline-block;
+  padding: 0 rem(5);
+}
+.breadcrumbs-detail li:last-child::after {
+  display: none;
+}

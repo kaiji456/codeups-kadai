@@ -1,0 +1,60 @@
+// 企業概要ページ
+.overview-page__mainview {
+  background-image: url(../images/common/overview-mv-sp.jpg);
+  @include mq("md") {
+    background-image: url(../images/common/overview-mv.jpg);
+    height: rem(370);
+  }
+}
+.overview-page__breadcrumbs {
+  margin-top: rem(16);
+}
+.overview-page__main {
+  max-width: rem(640);
+  width: 100%;
+  padding: 0 rem(20);
+  @include mq("md") {
+    max-width: rem(1150);
+    width: 100%;
+    padding: 0 rem(25);
+  }
+}
+
+.overview-page__address {
+  width: 100%;
+  height: rem(300);
+  background: $black;
+  margin-top: rem(120);
+  @include mq("md") {
+    max-width: rem(1150);
+    width: 100%;
+    height: rem(367);
+    background: $black;
+    margin: rem(80) auto 0 auto;
+    padding: 0 rem(25);
+  }
+}
+.overview-page__map {
+  width: 100%;
+  height: rem(300);
+  position: relative;
+  @include mq("md") {
+    width: 100%;
+    height: rem(367);
+    position: relative;
+  }
+}
+.overview-page__map iframe {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: rem(300);
+  width: 100%;
+  @include mq("md") {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: rem(367);
+    width: 100%;
+  }
+}

@@ -1,0 +1,6 @@
+.contact-top {
+  margin-top: rem(116);
+  @include mq("md") {
+    margin-top: rem(150);
+  }
+}

@@ -1,0 +1,41 @@
+// ヘッダー
+.fixed.header {
+  position: fixed;
+  background-color: rgba(17, 17, 17, 1);
+  transition: 0.5s;
+}
+.header {
+  position: fixed;
+  width: 100%;
+  height: rem(50);
+  background-color: rgba(17, 17, 17, 0.5);
+  z-index: 14;
+}
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: rem(50);
+}
+.header__logo {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: rem(22);
+  z-index: 14;
+  @include mq("md") {
+    padding-left: rem(32);
+
+  }
+}
+.header__logo a {
+  display: block;
+  width: rem(70);
+  height: rem(20);
+  font-size: 0;
+  @include mq("md") {
+    width: rem(94);
+    height: rem(28);
+  }
+}

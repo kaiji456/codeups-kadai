@@ -1,0 +1,87 @@
+// ページネーション
+.wp-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: rem(1150);
+  width: 100%;
+  padding: 0 rem(25);
+  height: rem(24);
+}
+.wp-pagination__prev {
+  display: flex;
+  justify-content: center;
+  font-size: rem(16);
+  font-weight: 400;
+  color: $white;
+  letter-spacing: rem(2);
+  border: 1px solid $white;
+  width: rem(71);
+  height: rem(24);
+  align-items: center;
+  margin-right: rem(24);
+}
+.wp__current {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: rem(16);
+  font-weight: 400;
+  background: #f9f871;
+  color: $black;
+  letter-spacing: rem(0.5);
+  width: rem(24);
+  height: rem(24);
+  margin-right: rem(16);
+}
+.wp__page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: rem(16);
+  font-weight: 400;
+  color: $white;
+  letter-spacing: rem(0.5);
+  border: 1px solid $white;
+  width: rem(24);
+  height: rem(24);
+  margin-right: rem(16);
+}
+.wp__page:last-of-type {
+  margin-right: 0;
+}
+.wp-pagination__next {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: rem(16);
+  font-weight: 400;
+  color: $white;
+  letter-spacing: rem(2);
+  border: 1px solid $white;
+  width: rem(71);
+  height: rem(24);
+  margin-left: rem(8);
+}
+.wp-pagination__all {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: rem(16);
+  font-weight: 400;
+  color: $white;
+  letter-spacing: rem(2);
+  border: 1px solid $white;
+  width: rem(71);
+  height: rem(24);
+  margin-left: rem(24);
+  margin-right: rem(40);
+}
+.wp-pagination a:hover {
+  @include mq("md") {
+  color: $black;
+  background-color: $white;
+  border: none;
+  transition: .3s;
+  }
+}

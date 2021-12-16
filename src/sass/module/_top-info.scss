@@ -1,0 +1,6 @@
+.top-info {
+  margin: rem(24) auto 0 auto;
+  @include mq("md") {
+    margin-top: rem(32);
+  }
+}

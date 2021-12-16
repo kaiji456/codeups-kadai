@@ -1,0 +1,17 @@
+.blog-hr {
+  position: relative;
+  top: rem(85);
+  transform: rotate(-75deg);
+  transform-origin: 0% 0%;
+  width: 385%;
+  border: 0;
+  border-top: 1px solid #f9f871;
+  margin: 0;
+  padding: 0;
+  @include mq("md") {
+    top: rem(262);
+    width: 141%;
+    transform: rotate(-45deg);
+    transform-origin: 0% 0%;
+  }
+}

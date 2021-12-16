@@ -1,0 +1,139 @@
+// 制作実績ページ
+.mainview__works-page {
+  background-image: url(../images/common/works-mv-sp.jpg);
+  background-position: center;
+  background-size: cover;
+  height: rem(425);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  z-index: -2;
+}
+.mainview__works-page::before {
+  content: '';
+  /* ↓暗いオーバーレイを半透明で配置 */
+  background-color: rgba(17, 17, 17, 0.3);
+  /* ↓全体を覆うように配置 */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: -1;
+}
+
+.works-card__header {
+  margin-top: rem(17);
+}
+.works-main {
+  background: $black;
+}
+.works-cat__list {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: rem(640);
+  width: 100%;
+  margin: rem(80) auto 0 auto;
+  padding: 0 rem(20);
+  align-items: center;
+}
+.works-cat__list-item__active {
+  font-size: rem(16);
+  font-weight: 400;
+  color: #333;
+  padding: rem(3) rem(8);
+  background: $white;
+  letter-spacing: rem(2);
+  margin-right: rem(24);
+}
+.works-cat__list-item {
+  font-size: rem(16);
+  font-weight: 400;
+  color: #fff;
+  letter-spacing: rem(2);
+  margin-right: rem(24);
+  line-height: rem(38);
+}
+.works-cat__list-item:last-child {
+  margin-right: 0;
+  margin-bottom: 0;
+}
+.works-card {
+  margin-top: rem(48);
+}
+.works-card:first-of-type {
+  margin-top: 0;
+}
+.works-card__img {
+  position: relative;
+  width: 100%;
+}
+.works-card__tag {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: rem(16);
+  font-weight: 400;
+  color: $white;
+  background: #111;
+  padding: rem(8) rem(20);
+}
+.works-card__title {
+  font-size: rem(20);
+  font-weight: 500;
+  color: $white;
+  text-align: center;
+  margin-top: rem(24);
+}
+
+@media screen and (min-width: 768px) {
+  .mainview__works-page {
+    background-image: url(../images/common/works-mv.jpg);
+    background-position: center;
+    background-size: cover;
+    height: rem(370);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    z-index: -2;
+  }
+  .works-cat__list {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: rem(1150);
+    width: 100%;
+    margin: rem(108) auto 0 auto;
+    padding: 0 rem(25);
+    align-items: center;
+  }
+
+  .works-card__header {
+    max-width: rem(1150);
+    width: 100%;
+    padding: 0 rem(25);
+    margin: rem(40) auto 0 auto;
+  }
+  .works-card__inner {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .works-card {
+    width: calc(50% - 48px / 2);
+    max-width: 100%;
+    margin-top: 0;
+  }
+  .works-card + .works-card {
+    margin-left: rem(48);
+  }
+  .works-card:nth-child(2n + 1) {
+    margin-left: 0;
+  }
+  .works-card:nth-child(n + 3) {
+    margin-top: rem(114);
+  }
+}

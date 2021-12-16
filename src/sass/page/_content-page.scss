@@ -1,0 +1,90 @@
+// 事業内容ページ
+.content-page__mainview {
+  background-image: url(../images/common/content-mv-sp.jpg);
+  @include mq("md") {
+    background-image: url(../images/common/content-mv.jpg);
+  }
+}
+.content-page__breadcrumbs {
+  margin-top: rem(16);
+}
+
+.content-page__main {
+  @include mq("md") {
+  }
+}
+.content-page__inner {
+  @include mq("md") {
+    max-width: rem(1150);
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 rem(25);
+  }
+}
+.content-page__top {
+  max-width: rem(640);
+  width: 100%;
+  margin: 0 auto;
+  @include mq("md") {
+    padding: 0;
+  }
+}
+.content-page__top-title {
+  color: $white;
+  font-size: rem(20);
+  font-weight: 400;
+  letter-spacing: rem(2);
+  text-align: center;
+  @include mq("md") {
+    font-size: rem(25);
+    line-height: rem(35);
+  }
+}
+.content-page__top-text {
+  color: $white;
+  font-size: rem(16);
+  font-weight: 400;
+  letter-spacing: rem(2);
+  margin: rem(24) auto 0 auto;
+  max-width: rem(640);
+  width: 100%;
+  padding: 0 rem(20);
+  @include mq("md") {
+    margin: rem(24) auto 0 auto;
+    line-height: rem(35);
+    padding: 0;
+  }
+}
+.content__card-list {
+  margin-top: rem(80);
+  @include mq("md") {
+    margin-top: rem(150);
+  }
+}
+.content__card {
+  margin-top: rem(48);
+  @include mq("md") {
+    margin: 0 auto;
+    margin-top: rem(104);
+  }
+}
+.content__card:first-child {
+  margin-top: 0;
+  @include mq("md") {
+  }
+}
+.content__card--reverse {
+  margin-top: rem(48);
+  @include mq("md") {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: rem(104);
+  }
+}
+.content-card__text--reverse {
+  @include mq("md") {
+  max-width: rem(550);
+  width: 100%;
+  padding: rem(10) rem(30) 0 0;
+  }
+}

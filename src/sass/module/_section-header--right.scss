@@ -1,0 +1,13 @@
+// セクションタイトル・右寄せ
+.section-header--right {
+  position: relative;
+  text-align: center;
+  z-index: 0;
+  top: rem(35);
+  padding-bottom: rem(30);
+  @include mq("md") {
+    text-align: right;
+    z-index: 0;
+    padding-bottom: 0;
+  }
+}

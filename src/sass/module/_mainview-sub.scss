@@ -1,0 +1,38 @@
+.mainview-sub {
+  background-position: center;
+  background-size: cover;
+  height: rem(425);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  z-index: -2;
+  @include mq("md") {
+    height: rem(370);
+  }
+}
+.mainview-sub::before {
+  content: '';
+  /* ↓暗いオーバーレイを半透明で配置 */
+  background-color: rgba(17, 17, 17, 0.3);
+  /* ↓全体を覆うように配置 */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: -1;
+}
+.mainview-sub__maintitle {
+  font-size: rem(30);
+  font-weight: bold;
+  color: $white;
+  letter-spacing: 0.05em;
+  @include mq("md") {
+    font-size: rem(35);
+    letter-spacing: rem(2);
+    padding-bottom: 0;
+  }
+}

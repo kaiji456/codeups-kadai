@@ -1,0 +1,45 @@
+//トップ・企業概要欄
+.overview__inner {
+  @include mq("md") {
+    max-width: rem(1150);
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 rem(25);
+  }
+}
+.overview__img {
+  @include mq("md") {
+    position: relative;
+    max-width: rem(557);
+    width: 100%;
+  }
+}
+.overview__img::before {
+  @include mq("md") {
+    content: "";
+    display: block;
+    padding-top: 70%;
+  }
+}
+.overview__img img {
+  position: relative;
+  width: 100%;
+  z-index: 5;
+  @include mq("md") {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+  }
+}
+.overview__show-btn {
+  margin-top: rem(16);
+  box-sizing: unset;
+  @include mq("md") {
+    position: relative;
+    padding: 0;
+    margin-top: rem(48);
+  }
+}

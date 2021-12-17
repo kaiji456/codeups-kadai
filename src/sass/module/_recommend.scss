@@ -1,0 +1,28 @@
+.recommend {
+  max-width: rem(640);
+  width: 100%;
+  padding: 0 rem(20);
+  @include mq("md") {
+    max-width: rem(1150);
+    width: 100%;
+    padding: 0 rem(25);
+  }
+}
+.recommend__title {
+  display: block;
+  width: 100%;
+  padding: rem(9.5) 0;
+  text-align: center;
+  color: $white;
+  font-size: rem(16);
+  font-weight: 400;
+  letter-spacing: rem(2);
+  border: 1px solid $white;
+  @include mq("md") {
+    background-color: #333;
+  }
+}
+.recommend__inner {
+  @include mq("md") {
+  }
+}

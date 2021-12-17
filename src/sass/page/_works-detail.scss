@@ -1,0 +1,143 @@
+.works-detail__breadcrumbs {
+  padding-top: rem(66);
+}
+.works-detail {
+  @include mq("md") {
+    max-width: rem(850);
+    width: 100%;
+    padding: 0 rem(25);
+  }
+}
+.works-detail__title-inner {
+  max-width: rem(640);
+  width: 100%;
+  padding: 0 rem(20);
+  @include mq("md") {
+    max-width: rem(850);
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+.works-detail__main-title {
+  max-width: rem(640);
+  width: 100%;
+  margin: rem(78) auto 0 auto;
+  @include mq("md") {
+    max-width: rem(850);
+    width: 100%;
+    padding: 0;
+  }
+}
+.works-detail__cat {
+  margin-top: rem(16);
+  @include mq("md") {
+    margin-top: rem(32);
+  }
+}
+
+
+.works-detail__text-inner {
+  max-width: rem(640);
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 rem(20);
+  @include mq("md") {
+    max-width: rem(850);
+    width: 100%;
+    padding: 0;
+  }
+}
+.works-detail__text-box {
+  position: relative;
+  border: 1px solid $white;
+  margin-bottom: rem(54);
+  @include mq("md") {
+  }
+}
+.works-detail__text-box:last-child {
+  margin-bottom: 0;
+}
+.works-detail__text-tag {
+  position: absolute;
+  border: 1px solid $white;
+  border-radius: rem(25);
+  color: $white;
+  background: $black;
+  font-size: rem(20);
+  font-weight: 400;
+  letter-spacing: rem(0.4);
+  padding: rem(8.5) rem(24);
+  top: -25px;
+  left: 24px;
+  @include mq("md") {
+  }
+}
+.works-detail__text {
+  color: $white;
+  font-size: rem(16);
+  font-weight: 400;
+  letter-spacing: rem(0.4);
+  line-height: rem(35);
+  padding: rem(56) rem(10) rem(33) rem(10);
+  @include mq("md") {
+    padding: rem(43) rem(22) rem(32) rem(23);
+
+  }
+}
+
+
+.works-detail__pagination {
+  margin-top: rem(80);
+  @include mq("md") {
+    margin-top: rem(104);
+  }
+}
+.works-detail__recommend {
+  margin: rem(120) auto 0 auto;
+  @include mq("md") {
+    margin-top: rem(104);
+  }
+}
+.works-detail__recommend-inner {
+  margin-top: rem(32);
+  @include mq("md") {
+    margin-top: rem(80);
+    display: flex;
+  }
+}
+.works-detail__top-contact {
+  margin-top: rem(120);
+  @include mq("md") {
+    margin-top: rem(150);
+  }
+}
+.works-detail__card {
+  margin-top: rem(32);
+  @include mq("md") {
+    width: calc(25% - 32px * 2 / 4);
+    max-width: 100%;
+    margin-top: 0;
+  }
+}
+.works-detail__card + .works-detail__card {
+  @include mq("md") {
+    margin-left: 25px;
+  }
+}
+.works-detail__card:nth-child(4n + 1) {
+  @include mq("md") {
+    margin-left: 0;
+  }
+}
+.works-detail__card:last-child {
+  @include mq("md") {
+    margin-top: 0;
+  }
+}
+.works-detail__top-contact {
+  margin-top: rem(120);
+  @include mq("md") {
+    margin-top: rem(150);
+  }
+}

@@ -1,0 +1,42 @@
+.detail-text {
+
+}
+.detail-text__main {
+  font-size: rem(16);
+  font-weight: 400;
+  color: $white;
+  line-height: rem(35);
+  letter-spacing: rem(0.4);
+  margin-top: rem(24);
+  @include mq("md") {
+    margin-top: rem(32);
+  }
+}
+.detail-text__sub-title--second {
+  font-size: rem(20);
+  font-weight: 400;
+  color: $white;
+  letter-spacing: rem(2);
+  margin-top: rem(24);
+  @include mq("md") {
+    margin-top: rem(32);
+  }
+}
+.detail-text__sub-title--second::before {
+  content: "";
+  border-left: 3px solid #fff;
+  padding-left: rem(7);
+}
+.detail-text__sub-title--third {
+  display: inline-block;
+  font-size: rem(18);
+  font-weight: 400;
+  color: $white;
+  letter-spacing: rem(2);
+  margin-top: rem(24);
+  border-bottom: 3px solid #fff;
+  margin-left: rem(7);
+  @include mq("md") {
+    margin-top: rem(32);
+  }
+}

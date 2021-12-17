@@ -34,52 +34,44 @@
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
   <!-- css -->
   <link rel="stylesheet" href="./assets/css/styles.css">
-  <!-- JavaScript -->
-  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
 
-  <!-- slick -->
-  <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-  <!-- swiper -->
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <script defer="" type="text/javascript" src="./assets/js/script.js"></script>
 </head>
 
 <body id="top">
 
   <!-- ドロワーメニュー -->
-  <nav class="drawer-menu">
-    <ul>
-      <li><a href="index.html">トップ</a></li>
-      <li><a href="info.html">お知らせ</a></li>
-      <li><a href="content.html">事業内容</a></li>
-      <li><a href="works.html">制作実績</a></li>
-      <li><a href="overview.html">企業概要</a></li>
-      <li><a href="blog.html">ブログ</a></li>
-      <li><a href="contact.html">お問い合わせ</a></li>
+  <nav class="drawer">
+    <ul class="drawer__menu">
+      <li class="drawer__list"><a href="index.html">トップ</a></li>
+      <li class="drawer__list"><a href="info.html">お知らせ</a></li>
+      <li class="drawer__list"><a href="content.html">事業内容</a></li>
+      <li class="drawer__list"><a href="works.html">制作実績</a></li>
+      <li class="drawer__list"><a href="overview.html">企業概要</a></li>
+      <li class="drawer__list"><a href="blog.html">ブログ</a></li>
+      <li class="drawer__list"><a href="contact.html">お問い合わせ</a></li>
     </ul>
   </nav>
 
   <!-- header -->
   <header class="header">
-    <div class="header-inner">
-      <div class="header-logo">
-        <a href="index.html" class="header-logo__svg"><img src="./assets/images/common/CodeUps.svg" alt=""></a>
+    <div class="header__inner">
+      <div class="header__logo">
+        <a href="index.html"><img src="./assets/images/common/CodeUps.svg" alt=""></a>
       </div>
 
-      <ul class="header-nav">
-        <li class="header-nav__list"><a href="info.html">お知らせ</a></li>
-        <li class="header-nav__list"><a href="content.html">事業内容</a></li>
-        <li class="header-nav__list"><a href="works.html">制作実績</a></li>
-        <li class="header-nav__list"><a href="overview.html">企業概要</a></li>
-        <li class="header-nav__list"><a href="blog.html">ブログ</a></li>
-        <li class="header-nav__list-contact"><a href="contact.html">お問い合わせ</a></li>
+      <ul class="header__nav header-nav">
+        <li class="header-nav__item"><a href="info.html">お知らせ</a></li>
+        <li class="header-nav__item"><a href="content.html">事業内容</a></li>
+        <li class="header-nav__item"><a href="works.html">制作実績</a></li>
+        <li class="header-nav__item"><a href="overview.html">企業概要</a></li>
+        <li class="header-nav__item"><a href="blog.html">ブログ</a></li>
+        <li class="header-nav__itembtn"><a href="contact.html">お問い合わせ</a></li>
       </ul>
-
     </div>
 
-    <div class="header-hamburger">
+    <div class="hamburger">
       <!-- ハンバーガーボタン -->
-      <div class="hamburger__menu-btn">
+      <div class="hamburger__btn">
         <span></span>
         <span></span>
         <span></span>
@@ -90,19 +82,15 @@
   <main>
 
     <!-- パンくずリスト -->
-    <nav>
-      <ol class="breadcrumbs-detail">
-        <li><a href="index.html">トップ</a></li>
-        <li><a href="info.html">お知らせ</a></li>
-        <li>お知らせ詳細</li>
-      </ol>
-    </nav>
+    <ol class="info-detail__breadcrumbs breadcrumbs">
+      <li><a href="index.html">トップ</a></li>
+      <li><a href="info.html">お知らせ</a></li>
+      <li>お知らせ詳細</li>
+    </ol>
 
     <!-- メインタイトル -->
 
     <div class="blog-detail__inner">
-
-
 
       <div class="works-detail__main-title">
         <h2 class="works-detail__main-title__top">タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。</h2>
@@ -254,48 +242,52 @@
     </div>
 
     <!-- お問い合わせ -->
-    <section class="contact">
-      <div class="contact-inner">
-        <div class="section-header__contact">
-          <h2 class="section-header__contact-title">Contact</h2>
-          <p class="section-header__contact-subtitle">お問い合わせ</p>
+    <section class="contact info-detail__top-contact">
+      <div class="contact__inner">
+        <div class="contact__title section-header">
+          <h2 class="section-header__title">Contact</h2>
+          <p class="section-header__subtitle-contact">お問い合わせ</p>
         </div>
-        <div class="section-text__contact">
-          <p class="section-text__contact-maintext">
+
+        <div class="contact__text">
+          <p class="contact__maintext">
             テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
           </p>
         </div>
-        <div class="contact__show-btn__header">
+
+        <div class="contact__btn-header">
           <div class="contact__show-btn">
             <a class="show-btn__pc-contact" href="contact.html">お問い合わせへ</a>
           </div>
         </div>
       </div>
     </section>
+
   </main>
 
   <!-- フッター -->
   <footer class="footer">
-    <div class="footer-inner">
-      <div class="footer-logo__header">
-        <a href="index.html" class="footer-logo__svg"><img src="./assets/images/common/CodeUps.svg" alt=""></a>
+    <div class="footer__inner">
+      <div class="footer__logo">
+        <a href="index.html"><img src="./assets/images/common/CodeUps.svg" alt=""></a>
       </div>
-      <ul class="footer-nav">
-        <li class="footer-nav__list-top"><a href="index.html">トップ</a></li>
-        <li class="footer-nav__list"><a href="info.html">お知らせ</a></li>
-        <li class="footer-nav__list"><a href="content.html">事業内容</a></li>
-        <li class="footer-nav__list-works"><a href="works.html">制作実績</a></li>
-        <li class="footer-nav__list"><a href="overview.html">企業概要</a></li>
-        <li class="footer-nav__list-blog"><a href="blog.html">ブログ</a></li>
-        <li class="footer-nav__list-media"><a href="blog.html">自社メディア</a></li>
-        <li class="footer-nav__list"><a href="contact.html">お問い合わせ</a></li>
+
+      <ul class="footer__nav">
+        <li class="footer__list-top"><a href="index.html">トップ</a></li>
+        <li class="footer__list"><a href="info.html">お知らせ</a></li>
+        <li class="footer__list"><a href="content.html">事業内容</a></li>
+        <li class="footer__list-works"><a href="works.html">制作実績</a></li>
+        <li class="footer__list"><a href="overview.html">企業概要</a></li>
+        <li class="footer__list-blog"><a href="blog.html">ブログ</a></li>
+        <li class="footer__list-media"><a href="blog.html">自社メディア</a></li>
+        <li class="footer__list"><a href="contact.html">お問い合わせ</a></li>
       </ul>
     </div>
 
-    <small class="footer-copy"> &copy; 2021 CodeUps Inc.</small>
+    <small class="footer__copy"> &copy; 2021 CodeUps Inc.</small>
 
     <!-- トップへ戻るボタン -->
-    <p class="pagetop__btn">
+    <p class="footer__btn pagetop-btn">
       <a href="#top">
         <i></i>
       </a>
@@ -303,6 +295,13 @@
 
   </footer>
 
+  <!-- JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <!-- slick -->
+  <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <!-- swiper -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script defer="" type="text/javascript" src="./assets/js/script.js"></script>
 
 </body>
 

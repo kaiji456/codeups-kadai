@@ -23,6 +23,21 @@
   object-fit: cover;
 }
 
+.works-detail__swiper-next,
+.works-detail__swiper-prev {
+  background-size: rem(30);
+  width: rem(30);
+  height: rem(30);
+}
+.works-detail__swiper-next {
+  background-image: url(/assets/images/common/arrow-r.png);
+}
+.works-detail__swiper-prev {
+  background-image: url(/assets/images/common/arrow-l.png);
+}
+
+
+
 //スライダーサムネイル
 .slider2-thumbnail {
   width: 100%;

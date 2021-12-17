@@ -52,30 +52,7 @@
   }
 }
 
-.blog__card:hover .card__body {
-  @include mq("md") {
-    background-color: #333;
-    transition: 0.3s;
-  }
-}
-.blog__card:hover .card__title {
-  @include mq("md") {
-    color: #fff;
-    transition: 0.3s;
-  }
-}
-.blog__card:hover .card__text {
-  @include mq("md") {
-    color: #fff;
-    transition: 0.3s;
-  }
-}
-.blog__card:hover .card__date {
-  @include mq("md") {
-    color: #fff;
-    transition: 0.3s;
-  }
-}
+
 .blog__btn-header {
   @include mq("md") {
     display: flex;

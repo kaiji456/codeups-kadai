@@ -1,0 +1,16 @@
+.detail-list {
+
+}
+.detail-list__inner {
+
+}
+.detail-list__item {
+  font-size: rem(16);
+  font-weight: 400;
+  color: $white;
+  line-height: rem(35);
+  letter-spacing: rem(0.4);
+  margin-top: rem(24);
+  @include mq("md") {
+  }
+}

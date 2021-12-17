@@ -1,0 +1,47 @@
+// ブログページ・メイン
+.blog-page__mainview {
+  background-image: url(../images/common/blog-mv-sp.jpg);
+  @include mq("md") {
+    background-image: url(../images/common/blog-mv.jpg);
+  }
+}
+.blog-page__breadcrumbs {
+  margin-top: rem(16);
+}
+.blog-cat__list {
+  margin-top: rem(85);
+  @include mq("md") {
+    margin-top: rem(115);
+  }
+}
+.blog-page__inner {
+  max-width: rem(1150);
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 rem(20);
+  @include mq("md") {
+    max-width: rem(1150);
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 rem(25);
+  }
+}
+.blog-page__card-list {
+  margin-top: rem(37);
+  @include mq("md") {
+    margin-top: rem(40);
+    width: 100%;
+  }
+}
+.blog-page__pagination {
+  margin-top: rem(80);
+  @include mq("md") {
+    margin-top: rem(104);
+  }
+}
+.blog-page__top-contact {
+  margin-top: rem(120);
+  @include mq("md") {
+    margin-top: rem(150);
+  }
+}

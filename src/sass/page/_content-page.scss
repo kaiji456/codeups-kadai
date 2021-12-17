@@ -88,3 +88,9 @@
   padding: rem(10) rem(30) 0 0;
   }
 }
+.content-page__top-contact {
+  margin-top: rem(120);
+  @include mq("md") {
+    margin-top: rem(150);
+  }
+}

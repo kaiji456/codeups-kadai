@@ -1,4 +1,5 @@
-.works-top {
+.top-content {
+  margin-top: rem(95);
   @include mq("md") {
     margin-top: rem(110);
   }

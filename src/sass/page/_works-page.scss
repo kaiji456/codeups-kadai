@@ -1,0 +1,67 @@
+// 制作実績ページ
+.works-page__mainview {
+  background-image: url(../images/common/works-mv-sp.jpg);
+  @include mq("md") {
+    background-image: url(../images/common/works-mv.jpg);
+  }
+}
+.works-page__breadcrumbs {
+  margin-top: rem(16);
+}
+.works-cat__list {
+  margin: rem(80) auto 0 auto;
+  @include mq("md") {
+    margin: rem(108) auto 0 auto;
+  }
+}
+.works-page {
+  @include mq("md") {
+  }
+}
+.works-page__inner {
+  @include mq("md") {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: rem(1150);
+    width: 100%;
+    padding: 0 rem(25);
+  }
+}
+.works-page__card {
+  margin-top: rem(48);
+  @include mq("md") {
+    margin-top: 0;
+    width: calc(50% - 48px / 2);
+    max-width: 100%;
+  }
+}
+.works-page__card + .works-page__card {
+  @include mq("md") {
+    margin-left: rem(48);
+  }
+}
+.works-page__card:nth-child(2n + 1) {
+  @include mq("md") {
+    margin-left: 0;
+  }
+}
+.works-page__card:nth-child(n + 3) {
+  @include mq("md") {
+    margin-top: rem(114);
+  }
+}
+.works-page__card:first-of-type {
+  margin-top: 0;
+}
+.works-page__pagination {
+  margin-top: rem(80);
+  @include mq("md") {
+    margin-top: rem(104);
+  }
+}
+.works-page__top-contact {
+  margin-top: rem(120);
+  @include mq("md") {
+    margin-top: rem(150);
+  }
+}

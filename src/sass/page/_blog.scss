@@ -36,7 +36,6 @@
     width: 100%;
   }
 }
-
 .blog__card + .blog__card {
   @include mq("md") {
     margin-left: 25px;

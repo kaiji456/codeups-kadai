@@ -1,0 +1,6 @@
+.top-works-page {
+  margin-top: rem(17);
+  @include mq("md") {
+    margin: rem(40) auto 0 auto;
+  }
+}

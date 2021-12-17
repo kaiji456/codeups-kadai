@@ -1,44 +1,10 @@
 // お問い合わせページ
-
-.mainview__contact-page {
+.contact-page__mainview {
   background-image: url(../images/common/contact-mv-sp.jpg);
-  background-position: center;
-  background-size: cover;
-  height: rem(425);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  position: relative;
-  z-index: -2;
-}
-.mainview__contact-page::before {
-  content: '';
-  /* ↓暗いオーバーレイを半透明で配置 */
-  background-color: rgba(17, 17, 17, 0.3);
-  /* ↓全体を覆うように配置 */
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: block;
-  z-index: -1;
-}
-
-
-
-@media screen and (min-width: 768px) {
-  .mainview__contact-page {
+  @include mq("md") {
     background-image: url(../images/common/contact-mv.jpg);
-    background-position: center;
-    background-size: cover;
-    height: rem(370);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    position: relative;
-    z-index: -2;
   }
+}
+.contact-page__breadcrumbs {
+  margin-top: rem(16);
 }

@@ -23,13 +23,11 @@
 .overview-page__address {
   width: 100%;
   height: rem(300);
-  background: $black;
   margin-top: rem(120);
   @include mq("md") {
     max-width: rem(1150);
     width: 100%;
     height: rem(367);
-    background: $black;
     margin: rem(80) auto 0 auto;
     padding: 0 rem(25);
   }

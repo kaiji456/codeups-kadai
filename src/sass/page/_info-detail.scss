@@ -1,0 +1,115 @@
+.info-detail__breadcrumbs {
+  padding-top: rem(66);
+}
+.info-detail {
+  @include mq("md") {
+    max-width: rem(850);
+    width: 100%;
+    padding: 0 rem(25);
+  }
+}
+.info-detail__title-inner {
+  max-width: rem(640);
+  width: 100%;
+  padding: 0 rem(20);
+  @include mq("md") {
+    max-width: rem(850);
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+.info-detail__main-title {
+  max-width: rem(640);
+  width: 100%;
+  margin: rem(78) auto 0 auto;
+  @include mq("md") {
+    max-width: rem(850);
+    width: 100%;
+    padding: 0;
+  }
+}
+.info-detail__cat {
+  margin-top: rem(16);
+  @include mq("md") {
+    margin-top: rem(32);
+  }
+}
+.info-detail__img {
+  margin-top: rem(16);
+  @include mq("md") {
+    margin: rem(32) auto 0 auto;
+  }
+}
+.info-detail__text-inner {
+  max-width: rem(640);
+  width: 100%;
+  padding: 0 rem(20);
+  margin: rem(24) auto 0 auto;
+  @include mq("md") {
+    max-width: rem(850);
+    width: 100%;
+    margin-top: 0;
+    padding: 0;
+  }
+}
+.info-detail__list-inner {
+  max-width: rem(640);
+  width: 100%;
+  padding: 0 rem(20);
+  margin: rem(24) auto 0 auto;
+  @include mq("md") {
+    max-width: rem(850);
+    width: 100%;
+    margin: rem(32) auto 0 auto;
+    padding: 0;
+  }
+}
+.info-detail__pagination {
+  margin-top: rem(80);
+  @include mq("md") {
+    margin-top: rem(104);
+  }
+}
+.info-detail__recommend {
+  margin: rem(120) auto 0 auto;
+  @include mq("md") {
+    margin-top: rem(104);
+  }
+}
+.info-detail__recommend-inner {
+  margin-top: rem(32);
+  @include mq("md") {
+    margin-top: rem(80);
+    display: flex;
+  }
+}
+.info-detail__card {
+  margin-top: rem(32);
+  @include mq("md") {
+    width: calc(25% - 32px * 2 / 4);
+    max-width: 100%;
+    margin-top: 0;
+  }
+}
+.info-detail__card + .info-detail__card {
+  @include mq("md") {
+    margin-left: 25px;
+  }
+}
+.info-detail__card:nth-child(4n + 1) {
+  @include mq("md") {
+    margin-left: 0;
+  }
+}
+.info-detail__card:last-child {
+  @include mq("md") {
+    // margin-top: 0;
+  }
+}
+.info-detail__top-contact {
+  margin-top: rem(120);
+  @include mq("md") {
+    margin-top: rem(150);
+  }
+}

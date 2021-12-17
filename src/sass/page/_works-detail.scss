@@ -35,8 +35,24 @@
     margin-top: rem(32);
   }
 }
-
-
+.works-detail__swiper {
+  margin-top: rem(16);
+  @include mq("md") {
+  margin-top: rem(32);
+  }
+}
+.works-detail__swiper-next,
+.works-detail__swiper-prev {
+  background-size: rem(30);
+  width: rem(30);
+  height: rem(30);
+}
+.works-detail__swiper-next {
+  background-image: url(/assets/images/common/arrow-r.png);
+}
+.works-detail__swiper-prev {
+  background-image: url(/assets/images/common/arrow-l.png);
+}
 .works-detail__text-inner {
   max-width: rem(640);
   width: 100%;
@@ -51,12 +67,13 @@
 .works-detail__text-box {
   position: relative;
   border: 1px solid $white;
-  margin-bottom: rem(54);
+  margin-top: rem(54);
   @include mq("md") {
+  margin-top: rem(71);
   }
 }
-.works-detail__text-box:last-child {
-  margin-bottom: 0;
+.works-detail__text-box:first-child {
+  margin-top: 0;
 }
 .works-detail__text-tag {
   position: absolute;
@@ -82,11 +99,8 @@
   padding: rem(56) rem(10) rem(33) rem(10);
   @include mq("md") {
     padding: rem(43) rem(22) rem(32) rem(23);
-
   }
 }
-
-
 .works-detail__pagination {
   margin-top: rem(80);
   @include mq("md") {

@@ -1,6 +1,3 @@
-.works-detail__swiper {
-  margin-top: rem(16);
-}
 .slider2 {
   width: 100%;
   padding-top: 69.83842%; //比率
@@ -23,21 +20,6 @@
   object-fit: cover;
 }
 
-.works-detail__swiper-next,
-.works-detail__swiper-prev {
-  background-size: rem(30);
-  width: rem(30);
-  height: rem(30);
-}
-.works-detail__swiper-next {
-  background-image: url(/assets/images/common/arrow-r.png);
-}
-.works-detail__swiper-prev {
-  background-image: url(/assets/images/common/arrow-l.png);
-}
-
-
-
 //スライダーサムネイル
 .slider2-thumbnail {
   width: 100%;
@@ -56,9 +38,7 @@
 }
 .swiper-wrapper > .swiper-slide {
   height: 100%;
-  // opacity: 0.5;
   overflow: hidden;
-  // margin-right: rem(24);
   &.swiper-slide-thumb-active {
     opacity: 1;
   }

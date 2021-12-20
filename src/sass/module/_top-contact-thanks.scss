@@ -1,0 +1,6 @@
+.top-contact-thanks {
+  padding-top: rem(130);
+  @include mq("md") {
+    padding-top: rem(200);
+  }
+}
